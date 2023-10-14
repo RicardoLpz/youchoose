@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{45FCC5B9-8366-4A9D-B2D8-E7C2A35A9D05}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YouChooseApp</RootNamespace>
+    <AssemblyName>YouChooseApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\..\..\..\..\..\Desktop\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa">
+      <HintPath>..\..\..\..\..\..\Desktop\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Recaptcha">
+      <HintPath>..\..\..\..\..\..\Desktop\Recaptcha.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Administrador.aspx" />
+    <Content Include="Calificanos.aspx" />
+    <Content Include="carruselMesas.ascx" />
+    <Content Include="Confirmacion.aspx" />
+    <Content Include="Contactanos.aspx" />
+    <Content Include="Cuenta.aspx" />
+    <Content Include="imagenes mesas\mesa 1.jpg" />
+    <Content Include="imagenes mesas\mesa 2.jpg" />
+    <Content Include="imagenes mesas\mesa 3.jpg" />
+    <Content Include="imagenes mesas\mesa 4.jpg" />
+    <Content Include="img\close.png" />
+    <Content Include="img\loading.gif" />
+    <Content Include="img\next.png" />
+    <Content Include="img\prev.png" />
+    <Content Include="Ubicanos2.aspx" />
+    <Content Include="yc log\css\lightbox.css" />
+    <Content Include="yc log\css\lightbox.min.css" />
+    <Content Include="yc log\Estrellas.css" />
+    <Content Include="footer.ascx" />
+    <Content Include="img\cafe1.jpg" />
+    <Content Include="img\cafe2.jpg" />
+    <Content Include="img\cake.jpg" />
+    <Content Include="img\cake1.jpg" />
+    <Content Include="img\chapultepec.jpg" />
+    <Content Include="img\flor.png" />
+    <Content Include="img\img\cafe1.jpg" />
+    <Content Include="img\img\cafe2.jpg" />
+    <Content Include="img\img\cake1.jpg" />
+    <Content Include="img\img\chapultepec.jpg" />
+    <Content Include="img\img\flor.png" />
+    <Content Include="img\img\madera.png" />
+    <Content Include="img\img\Untitled-1.ico" />
+    <Content Include="img\madera.png" />
+    <Content Include="img\Untitled-1.ico" />
+    <Content Include="img\Untitled-1.png" />
+    <Content Include="Login.aspx" />
+    <Content Include="Menu.ascx" />
+    <Content Include="Principal.aspx" />
+    <Content Include="Recibo.aspx" />
+    <Content Include="RegistroUsuario.aspx" />
+    <Content Include="Reservacion.aspx" />
+    <Content Include="Ubicanos.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="yc log\bootstrap\css\bootstrap.css" />
+    <Content Include="yc log\bootstrap\css\bootstrap.min.css" />
+    <Content Include="yc log\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="yc log\bootstrap\js\bootstrap.js" />
+    <Content Include="yc log\bootstrap\js\bootstrap.min.js" />
+    <Content Include="yc log\css\style.css" />
+    <Content Include="yc log\css\style2.css" />
+    <Content Include="yc log\font-awesome\css\font-awesome.css" />
+    <Content Include="yc log\font-awesome\css\font-awesome.min.css" />
+    <Content Include="yc log\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="yc log\js\index.js" />
+    <Content Include="yc log\js\jquery-1.10.2.min.js" />
+    <Content Include="yc log\js\lightbox.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Calificanos.aspx.cs">
+      <DependentUpon>Calificanos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Calificanos.aspx.designer.cs">
+      <DependentUpon>Calificanos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="carruselMesas.ascx.cs">
+      <DependentUpon>carruselMesas.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="carruselMesas.ascx.designer.cs">
+      <DependentUpon>carruselMesas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Confirmacion.aspx.cs">
+      <DependentUpon>Confirmacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Confirmacion.aspx.designer.cs">
+      <DependentUpon>Confirmacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contactanos.aspx.cs">
+      <DependentUpon>Contactanos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contactanos.aspx.designer.cs">
+      <DependentUpon>Contactanos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cuenta.aspx.cs">
+      <DependentUpon>Cuenta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cuenta.aspx.designer.cs">
+      <DependentUpon>Cuenta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="footer.ascx.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="footer.ascx.designer.cs">
+      <DependentUpon>footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Plantilla.Master.cs">
+      <DependentUpon>Plantilla.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plantilla.Master.designer.cs">
+      <DependentUpon>Plantilla.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.aspx.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Principal.aspx.designer.cs">
+      <DependentUpon>Principal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recibo.aspx.cs">
+      <DependentUpon>Recibo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Recibo.aspx.designer.cs">
+      <DependentUpon>Recibo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroUsuario.aspx.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistroUsuario.aspx.designer.cs">
+      <DependentUpon>RegistroUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reservacion.aspx.cs">
+      <DependentUpon>Reservacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reservacion.aspx.designer.cs">
+      <DependentUpon>Reservacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicanos.aspx.cs">
+      <DependentUpon>Ubicanos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ubicanos.aspx.designer.cs">
+      <DependentUpon>Ubicanos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ubicanos2.aspx.cs">
+      <DependentUpon>Ubicanos2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ubicanos2.aspx.designer.cs">
+      <DependentUpon>Ubicanos2.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Plantilla.Master" />
+    <Content Include="img\img\Thumbs.db" />
+    <Content Include="img\Thumbs.db" />
+    <Content Include="imagenes mesas\Thumbs.db" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="yc log\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="yc log\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="yc log\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="yc log\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="yc log\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="yc log\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="yc log\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="yc log\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="yc log\font-awesome\less\bordered-pulled.less" />
+    <Content Include="yc log\font-awesome\less\core.less" />
+    <Content Include="yc log\font-awesome\less\fixed-width.less" />
+    <Content Include="yc log\font-awesome\less\font-awesome.less" />
+    <Content Include="yc log\font-awesome\less\icons.less" />
+    <Content Include="yc log\font-awesome\less\larger.less" />
+    <Content Include="yc log\font-awesome\less\list.less" />
+    <Content Include="yc log\font-awesome\less\mixins.less" />
+    <Content Include="yc log\font-awesome\less\path.less" />
+    <Content Include="yc log\font-awesome\less\rotated-flipped.less" />
+    <Content Include="yc log\font-awesome\less\spinning.less" />
+    <Content Include="yc log\font-awesome\less\stacked.less" />
+    <Content Include="yc log\font-awesome\less\variables.less" />
+    <Content Include="yc log\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="yc log\font-awesome\scss\_core.scss" />
+    <Content Include="yc log\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="yc log\font-awesome\scss\_icons.scss" />
+    <Content Include="yc log\font-awesome\scss\_larger.scss" />
+    <Content Include="yc log\font-awesome\scss\_list.scss" />
+    <Content Include="yc log\font-awesome\scss\_mixins.scss" />
+    <Content Include="yc log\font-awesome\scss\_path.scss" />
+    <Content Include="yc log\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="yc log\font-awesome\scss\_spinning.scss" />
+    <Content Include="yc log\font-awesome\scss\_stacked.scss" />
+    <Content Include="yc log\font-awesome\scss\_variables.scss" />
+    <Content Include="yc log\font-awesome\scss\font-awesome.scss" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1858/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
